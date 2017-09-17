@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\bin\Weabers.exe"/>
+    <OBJFILES value="..\int\Weabers.obj ..\int\FMain.obj ..\int\iexplore.obj 
+      ..\int\webserver.obj ..\int\shttpd.obj ..\int\globals.obj ..\int\lua.obj"/>
+    <RESFILES value="Weabers.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) FMain.dfm"/>
+    <LIBFILES value="..\lib\lua5.1.lib"/>
+    <LIBRARIES value="bdertl.lib VclSmp.lib tee.lib vcldb.lib dbrtl.lib vclx.lib bcbie.lib 
+      rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib bcbie.lib vclx.lib dbrtl.lib vcldb.lib tee.lib VclSmp.lib 
+      bdertl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="DEMBEDDED;EMBEDDED;-DEMBEDDED"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="Weabers.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;.\lua"/>
+    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib;..\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -5 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-N2..\int -N0..\int -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-l..\lib -I..\int -D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Weabers.res" FORMNAME="" UNITNAME="Weabers.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Weabers.cpp" FORMNAME="" UNITNAME="Weabers" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FMain.cpp" FORMNAME="frmMain" UNITNAME="FMain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="iexplore.cpp" FORMNAME="" UNITNAME="iexplore" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="webserver.cpp" FORMNAME="" UNITNAME="webserver" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="shttpd.c" FORMNAME="" UNITNAME="shttpd" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="globals.cpp" FORMNAME="" UNITNAME="globals" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\lib\lua5.1.lib" FORMNAME="" UNITNAME="lua5.1.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lua.cpp" FORMNAME="" UNITNAME="lua" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=1
+Release=1
+Build=1
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2057
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Inspired Archetypes cc
+FileDescription=Weabers Executable
+FileVersion=1.1.1.1
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.1
+Comments=Weabers - Web Application Browser and Server
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Projects\Bpl\PKActiveLock.bpl=ActiveLock
+
+[HistoryLists\hlIncludePath]
+Count=11
+Item0=$(BCB)\include;$(BCB)\include\vcl;.\lua
+Item1=$(COMPDIR)\TMS\CP;$(BCB)\include;$(BCB)\include\vcl;.\lua
+Item2=..\res\images;H:\VAMSBrowser\src;$(COMPDIR)\TMS\CP;C:\Program Files\Borland\CBuilder6\Projects;H:\WebAppBrowser\src;$(BCB)\include;$(BCB)\include\vcl;$(DEVDIR)\ULIB;$(COMPDIR)\EHS;$(COMPDIR)\TP\Abbrrevia\source
+Item3=H:\VAMSBrowser\src;$(COMPDIR)\TMS\CP;C:\Program Files\Borland\CBuilder6\Projects;H:\WebAppBrowser\src;$(BCB)\include;$(BCB)\include\vcl;$(DEVDIR)\ULIB;$(COMPDIR)\EHS;$(COMPDIR)\TP\Abbrrevia\source
+Item4=$(COMPDIR)\TMS\CP;C:\Program Files\Borland\CBuilder6\Projects;H:\WebAppBrowser\src;$(BCB)\include;$(BCB)\include\vcl;$(DEVDIR)\ULIB;$(COMPDIR)\EHS;$(COMPDIR)\TP\Abbrrevia\source
+Item5=C:\Program Files\Borland\CBuilder6\Projects;H:\WebAppBrowser\src;$(BCB)\include;$(BCB)\include\vcl;$(DEVDIR)\ULIB;$(COMPDIR)\EHS;$(COMPDIR)\TP\Abbrrevia\source
+Item6=$(BCB)\include;$(BCB)\include\vcl;$(DEVDIR)\ULIB;$(COMPDIR)\EHS;$(COMPDIR)\TP\Abbrrevia\source
+Item7=$(BCB)\include;$(BCB)\include\vcl;$(DEVDIR)\ULIB;$(COMPDIR)\EHS
+Item8=$(BCB)\include;$(BCB)\include\vcl;$(DEVDIR)\ULIB
+Item9=$(BCB)\include;$(BCB)\include\vcl;$(DEVDIR)\ULIBS
+Item10=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=9
+Item0=$(BCB)\lib\obj;$(BCB)\lib;..\lib
+Item1=$(COMPDIR)\TMS\CP;$(BCB)\lib\obj;$(BCB)\lib;..\lib
+Item2=$(COMPDIR)\TMS\CP;$(BCB)\lib\obj;$(BCB)\lib;..\lib;C:\Program Files\Borland\CBuilder6\Projects\Bpl;C:\Program Files\Borland\CBuilder6\Projects\lib
+Item3=$(COMPDIR)\TMS\CP;$(BCB)\lib\obj;$(BCB)\lib;..\lib;C:\Program Files\Borland\CBuilder6\Projects\Bpl
+Item4=..\res\images;H:\VAMSBrowser\src;$(BCB)\Projects\Lib;$(COMPDIR)\TMS\CP;C:\Program Files\Borland\CBuilder6\Projects;H:\WebAppBrowser\src;$(BCB)\lib\obj;$(BCB)\lib
+Item5=H:\VAMSBrowser\src;$(BCB)\Projects\Lib;$(COMPDIR)\TMS\CP;C:\Program Files\Borland\CBuilder6\Projects;H:\WebAppBrowser\src;$(BCB)\lib\obj;$(BCB)\lib
+Item6=$(BCB)\Projects\Lib;$(COMPDIR)\TMS\CP;C:\Program Files\Borland\CBuilder6\Projects;H:\WebAppBrowser\src;$(BCB)\lib\obj;$(BCB)\lib
+Item7=C:\Program Files\Borland\CBuilder6\Projects;H:\WebAppBrowser\src;$(BCB)\lib\obj;$(BCB)\lib
+Item8=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=3
+Item0=$(BCB)\source\vcl;$(DEVDIR)\ULib
+Item1=$(BCB)\source\vcl;$(DEVDIR)\ULibs
+Item2=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=8
+Item0=DEMBEDDED;EMBEDDED;-DEMBEDDED
+Item1=DEMBEDDED;EMBEDDED;-DEMBEDDED;_DEBUG
+Item2=_DEBUG;DEMBEDDED;EMBEDDED;-DEMBEDDED
+Item3=_DEBUG;DEMBEDDED;EMBEDDED
+Item4=_DEBUG;DEMBEDDED;EMBEDDED
+Item5=_DEBUG;-DEMBEDDED
+Item6=_DEBUG;-DEMBEDDED
+Item7=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=2
+Item0=..\int
+Item1=.
+
+[HistoryLists\hlFinalOutputDir]
+Count=4
+Item0=..\bin\
+Item1=..\bin
+Item2=.\
+Item3=.
+
+[HistoryLists\hIBPIOutputDir]
+Count=2
+Item0=..\lib
+Item1=.
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl;$(DEVDIR)\ULib
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
